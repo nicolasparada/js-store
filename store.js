@@ -1,4 +1,5 @@
 export function createStore(state = undefined) {
+    let resolving = false
     const fns = new Set()
     const getState = () => state
     const setState = withState => {
@@ -8,9 +9,16 @@ export function createStore(state = undefined) {
         } else {
             state = nextState
         }
-        for (const fn of fns) {
-            fn(state)
+        if (resolving) {
+            return
         }
+        resolving = true
+        Promise.resolve().then(() => {
+            for (const fn of fns) {
+                fn(state)
+            }
+            resolving = false
+        })
     }
     /**
      * @param {function} fn
