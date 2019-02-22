@@ -1,13 +1,13 @@
 # JavaScript Store
 
-Simple state container for your daily use in 340 bytes 😊
+Simple state container for your daily use in 400 bytes 😊
 
 Shipped like an ES module. Load it with `<script type=module>`.
 
 ## Example
 
 ```js
-import { createStore } from 'https://unpkg.com/@nicolasparada/store@0.1.0/store.js'
+import { createStore } from 'https://unpkg.com/@nicolasparada/store@0.2.0/store.js'
 
 const store = createStore(0)
 
