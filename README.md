@@ -7,7 +7,7 @@ Shipped like an ES module. Load it with `<script type=module>`.
 ## Example
 
 ```js
-import { createStore } from 'https://unpkg.com/@nicolasparada/store@0.3.0/store.js'
+import { createStore } from 'https://unpkg.com/@nicolasparada/store@0.4.0/store.js'
 
 const store = createStore(0)
 

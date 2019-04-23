@@ -1,9 +1,10 @@
 {
   "name": "@nicolasparada/store",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Store",
   "main": "store.js",
   "module": "store.js",
+  "type": "module",
   "files": [
     "store.js"
   ],
